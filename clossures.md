@@ -2,18 +2,18 @@
 Независимые переменные — это все переменные, которые не были переданы как параметры и не были объявлены как локальные.<br> Посмотрим на пример.
 
 ```javascript
-// function numberGenerator() {
-//     // Local “free” variable that ends up within the closure
-//     var num = 1;
-//     function checkNumber() {
-//         console.log(num);
-//     }
-//     num++;
-//     return checkNumber;
-// }
-//
-// var number = numberGenerator();
-// number(); // 2
+ function numberGenerator() {
+     Local “free” variable that ends up within the closure
+     var num = 1;
+     function checkNumber() {
+         console.log(num);
+     }
+     num++;
+     return checkNumber;
+}
+
+var number = numberGenerator();
+number(); // 2
 ```
 
 В примере выше функция numberGenerator создаёт локальную переменную num (число), а также локальную функцию checkNumber (функцию, печатающую num в консоль разработчика).
