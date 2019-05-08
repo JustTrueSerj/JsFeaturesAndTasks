@@ -8,5 +8,5 @@
 (То, что еще нужно найти) - toFind.html <br>
 <br>
 Тематические: <br>
-<a href="https://github.com/JustTrueSerj/JsFeaturesAndTasks/blob/master/clossures.js">clossures.js</a> - Замыкания <br>
+<a href="https://github.com/JustTrueSerj/JsFeaturesAndTasks/blob/master/clossures.js">clossures.md</a> - Замыкания <br>
 carrying.js - каррирование <br>
