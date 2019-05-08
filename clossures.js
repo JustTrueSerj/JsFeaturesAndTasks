@@ -26,14 +26,14 @@
 
 // -- 2 Пример замыкания --
 //
-// function sayHello() {
-//     var say = function() { console.log(hello); }
-//     // Local variable that ends up within the closure
-//     var hello = 'Hello, world!';
-//     return say;
-// }
-// var sayHelloClosure = sayHello();
-// sayHelloClosure(); // ‘Hello, world!’
+function sayHello() {
+    var say = function() { console.log(hello); }
+    // Local variable that ends up within the closure
+    var hello = 'Hello, world!';
+    return say;
+}
+var sayHelloClosure = sayHello();
+sayHelloClosure(); // ‘Hello, world!’
 //
 //Заметно, что переменная hello объявлена после анонимной функции, но всё равно доступна для неё.
 //Это происходит из-за ключевого слова var, которое делает переменную доступной сразу во всей области видимости функции сразу после начала вызова
