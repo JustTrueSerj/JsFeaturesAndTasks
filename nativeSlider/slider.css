@@ -1,0 +1,25 @@
+#slider {
+    width: 768px;
+    height: 256px;
+    border: 5px solid black;
+    margin: 50px auto;
+    overflow: hidden;
+}
+
+#polosa {
+    width: 1536px;
+    position: relative;
+    transition: all ease 1s;
+    left: 0;
+}
+
+#polosa img {
+    background: white;
+    float: left;
+}
+
+#polosa::after {
+    content: "";
+    display: block;
+    clear: both;
+}
