@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JSON</title>
+</head>
+<body>
+<h3>Протокол JSONP как раз и призван облегчить эту задачу. <br>
+
+    Он очень простой: <br>
+
+    Вместе с запросом клиент в специальном, заранее оговорённом, параметре передаёт название функции. <br>
+
+    Обычно такой параметр называется callback. Например : <br>
+
+    <p style="color: aqua">addScript('user?id=123&callback=onUserData'); </p>
+
+    Сервер кодирует данные в JSON и оборачивает их в вызов функции, название которой получает из параметра callback:
+
+</h3>
+
+<script src="jsonp.js"></script>
+</body>
+</html>
